@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ViRAE poster – Georgios Ziampas</title>
+<meta name="description" content="Contact, ViRAE tool and references for the poster 'Improvement of de novo assembly of viral fragmented genomes'.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  --bg:#EEF2F9;--surface:#FFFFFF;--ink:#1C2230;--muted:#4A5468;
+  --brand:#1D49A7;--brand-ink:#FFFFFF;--tint:#E3E9F4;--line:#D5DDEE;
+  --display:"Oswald","Arial Narrow",sans-serif;--body:"Poppins","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0F1522;--surface:#172033;--ink:#E6EAF3;--muted:#A9B3C7;
+  --brand:#6E95E8;--brand-ink:#0F1522;--tint:#1F2B45;--line:#2A3754;color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55}
+.wrap{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+header{background:var(--brand);color:var(--brand-ink)}
+header .wrap{padding-block:calc(24px + env(safe-area-inset-top)) 22px;display:flex;flex-direction:column;gap:6px}
+.eyebrow{font-family:var(--display);font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:13px;opacity:.85}
+h1{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(26px,7vw,34px);line-height:1.12;text-wrap:balance}
+header p{margin:0;font-size:14px}
+main.wrap{padding-block:18px 32px;display:flex;flex-direction:column;gap:14px}
+section{background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:12px}
+h2{margin:0;font-family:var(--display);font-weight:600;font-size:21px;letter-spacing:.04em;text-transform:uppercase;color:var(--brand)}
+p{margin:0}
+.name{font-weight:600;font-size:17px}
+.sub{font-size:13.5px;color:var(--muted)}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:10px 16px;border-radius:8px;
+  background:var(--brand);color:var(--brand-ink);font-weight:600;text-decoration:none;font-size:15px}
+.btn.alt{background:var(--tint);color:var(--brand);border:1.5px solid var(--brand)}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.btn svg{width:20px;height:20px;flex:none}
+.credit{background:var(--tint);border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.credit .role{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);font-weight:600}
+ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px;font-size:13.5px;line-height:1.5}
+ol li::marker{color:var(--brand);font-weight:600}
+a{color:var(--brand);text-underline-offset:2px}
+.doi{font-size:13px;word-break:break-all}
+footer{padding-block:0 calc(28px + env(safe-area-inset-bottom));font-size:12.5px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.btn{transition:filter .15s}.btn:hover{filter:brightness(1.08)}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Poster</div>
+    <h1>Improvement of de novo assembly of viral fragmented genomes</h1>
+    <p>G. Ziampas, K. Konstantinidis, G. Braliou, I. Karakasiliotis</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">Contact</h2>
+    <div>
+      <p class="name">Georgios Ziampas</p>
+      <p class="sub">Department of Computer Science and Biomedical Informatics, University of Thessaly, Lamia, Greece</p>
+    </div>
+    <a class="btn" href="https://www.linkedin.com/in/g-zia" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.5-2.25 3.1V21H9z"/></svg>
+      Connect on LinkedIn
+    </a>
+  </section>
+
+  <section aria-labelledby="tool">
+    <h2 id="tool">ViRAE tool</h2>
+    <p><b>ViRAE (Viral Reads Assembly Enhancer)</b> detects artificial rRNA–virus chimeric reads, trims the non-viral segment and keeps the viral sequence, so de novo assembly yields longer, more complete viral genomes. It evolves the Zero-Waste Algorithm (<a href="https://doi.org/10.1371/journal.pcbi.1009304" target="_blank" rel="noopener">ZWA</a>).</p>
+    <a class="btn alt" href="https://github.com/konskons11/ViRAE" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+      ViRAE on GitHub
+    </a>
+    <div class="credit">
+      <span class="role">Tool provided by</span>
+      <span class="name">Konstantinos Konstantinidis</span>
+      <span class="sub">Laboratory of Biology, Department of Medicine, Democritus University of Thrace, Alexandroupolis, Greece</span>
+    </div>
+  </section>
+
+  <section aria-labelledby="refs">
+    <h2 id="refs">References</h2>
+    <ol>
+      <li>Li H, Durbin R. Fast and accurate short read alignment with Burrows–Wheeler transform. <i>Bioinformatics</i>. 2009; <a class="doi" href="https://doi.org/10.1093/bioinformatics/btp324" target="_blank" rel="noopener">doi: 10.1093/bioinformatics/btp324</a>.</li>
+      <li>Quast C, Pruesse E, Yilmaz P, Gerken J, Schweer T, Yarza P, et al. The SILVA ribosomal RNA gene database project: improved data processing and web-based tools. <i>Nucleic Acids Research</i>. 2013; <a class="doi" href="https://doi.org/10.1093/nar/gks1219" target="_blank" rel="noopener">doi: 10.1093/nar/gks1219</a>.</li>
+      <li>Li D, Liu C-M, Luo R, Sadakane K, Lam T-W. MEGAHIT: an ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph. <i>Bioinformatics</i>. 2015; <a class="doi" href="https://doi.org/10.1093/bioinformatics/btv033" target="_blank" rel="noopener">doi: 10.1093/bioinformatics/btv033</a>.</li>
+      <li>Nayfach S, Camargo AP, Schulz F, et al. CheckV assesses the quality and completeness of metagenome-assembled viral genomes. <i>Nat Biotechnol</i>. 2021;39:578–585. <a class="doi" href="https://doi.org/10.1038/s41587-020-00774-7" target="_blank" rel="noopener">doi: 10.1038/s41587-020-00774-7</a>.</li>
+    </ol>
+  </section>
+
+</main>
+<footer class="wrap">University of Thessaly · Democritus University of Thrace</footer>
+</body>
+</html>
